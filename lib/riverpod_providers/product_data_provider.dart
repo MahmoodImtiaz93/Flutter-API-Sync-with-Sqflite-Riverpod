@@ -10,7 +10,7 @@ class ProductDataNotifier
   final DatabaseHelper _databaseHelper;
 
   ProductDataNotifier(this._apiService, this._databaseHelper)
-      : super(AsyncValue.data([])); // Initialize with an empty list
+      : super(AsyncValue.data([]));
 
   Future<void> createProduct(Map<String, dynamic> formData) async {
     state = const AsyncValue.loading();
